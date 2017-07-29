@@ -162,3 +162,7 @@ alias reload="exec $SHELL -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# Spoof MAC Address
+alias spoofon='sudo spoof-mac.py randomize wi-fi && spoof-mac.py list --wifi'
+alias spoofoff='sudo spoof-mac.py reset wi-fi && spoof-mac.py list --wifi'
